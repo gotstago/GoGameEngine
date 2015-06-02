@@ -1,7 +1,7 @@
 package lexer
 
 import (
-	"github.com/gotstago/sample-ini-parser/services/lexer/lexertoken"
+	"github.com/gotstago/GoGameEngine/services/lexer/lexertoken"
 	//"log"
 )
 

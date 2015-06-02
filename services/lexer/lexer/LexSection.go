@@ -3,8 +3,8 @@ package lexer
 import (
 	"strings"
 
-	"github.com/gotstago/sample-ini-parser/services/lexer/errors"
-	"github.com/gotstago/sample-ini-parser/services/lexer/lexertoken"
+	"github.com/gotstago/GoGameEngine/services/lexer/errors"
+	"github.com/gotstago/GoGameEngine/services/lexer/lexertoken"
 )
 
 /*

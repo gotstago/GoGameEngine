@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"log"
 
-	"github.com/gotstago/sample-ini-parser/services/parser"
+	"github.com/gotstago/GoGameEngine/services/parser"
 )
 
 func main() {

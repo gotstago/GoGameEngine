@@ -4,9 +4,9 @@ import (
 	"log"
 	"strings"
 
-	"github.com/gotstago/sample-ini-parser/model/ini"
-	"github.com/gotstago/sample-ini-parser/services/lexer"
-	"github.com/gotstago/sample-ini-parser/services/lexer/lexertoken"
+	"github.com/gotstago/GoGameEngine/model/ini"
+	"github.com/gotstago/GoGameEngine/services/lexer"
+	"github.com/gotstago/GoGameEngine/services/lexer/lexertoken"
 )
 
 func isEOF(token lexertoken.Token) bool {

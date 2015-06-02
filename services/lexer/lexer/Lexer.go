@@ -6,7 +6,7 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/gotstago/sample-ini-parser/services/lexer/lexertoken"
+	"github.com/gotstago/GoGameEngine/services/lexer/lexertoken"
 )
 
 /*
