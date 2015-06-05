@@ -29,4 +29,5 @@ func main() {
 	}
 
 	log.Println(string(prettyJSON))
+	log.Printf("iniFile is %v", parsedINIFile)
 }
