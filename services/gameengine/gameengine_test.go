@@ -6,10 +6,11 @@ import (
 	"github.com/gotstago/GoGameEngine/model/game"
 )
 
-func TestRecord(t *testing.T) {
+func TestRecordHasAtLeastOneStage(t *testing.T) {
 	input := make(chan game.GameEvent)
 	o := Record("tarabish", input)
-	if len(o.Stages) == 0 {
+	//input <- game.GameEvent{Type: game.GAME_EVENT_ANNOUNCE_BELLA, Value: ""}
+	if len(o.Stages) != 0 {
 		t.Error("Expected something, got nothing")
 	}
 }
