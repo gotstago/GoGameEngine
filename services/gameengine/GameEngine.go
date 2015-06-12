@@ -11,8 +11,13 @@ func Record(gameName string, input chan game.GameEvent) game.GameLog {
 		Stages: make([]game.GameStage, 0),
 	}
 	log.Println("Starting my listener and parser for file", gameName, "...")
-
+	stage := game.GameStage{}
+	stage.Actions = make([]game.GameAction, 0)
 	listener := BeginListening(gameName, input)
-	log.Println("Starting my listener and parser for file", listener.Name, "...")
+	//listener.State = listener.State(listener)
+	action := listener.NextAction()
+	stage.Actions = append(stage.Actions, action)
+	output.Stages = append(output.Stages, stage)
+	log.Println("Starting my listener and parser for file", listener.Name, action.Value, "...")
 	return output
 }

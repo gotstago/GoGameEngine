@@ -15,7 +15,7 @@ func BeginListening(name string, input chan game.GameEvent) *eventListener.Event
 		Name:    name,
 		Input:   input,
 		State:   eventListener.GameBegin,
-		Actions: make(chan game.GameAction),
+		Actions: make(chan game.GameAction, 3),
 	}
 
 	return l
